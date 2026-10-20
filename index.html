@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reelspro | Reels und Kurzvideos für Reiseveranstalter</title>
+<meta name="description" content="Professionelle Reels und Kurzvideos für Reiseveranstalter. Wir verwandeln vorhandene Fotos und Videos in Videocontent für Social Media und Websites.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- =========================================================
+     HEADER / NAVIGATION
+========================================================= -->
+<header class="site-header">
+  <div class="container">
+    <a href="#hero" class="logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="14" cy="14" r="14" fill="#C62835"/>
+        <path d="M11 9L19 14L11 19V9Z" fill="#FFFFFF"/>
+      </svg>
+      Reelspro
+    </a>
+
+    <nav class="main-nav">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#vorteile">Vorteile</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#vorteile">Vorteile</a>
+    <a href="#ablauf">Ablauf</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
+  </div>
+</header>
+
+<!-- =========================================================
+     SECTION 01 — HERO
+========================================================= -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="eyebrow">Reels &amp; Kurzvideos für Reiseveranstalter</span>
+      <h1>Professionelle Reels und Kurzvideos für Ihre Reisen.</h1>
+      <p class="lede">Wir verwandeln Ihre vorhandenen Fotos und Videos in aufmerksamkeitsstarken Reisecontent – für Social Media, Ihre Website und weitere Marketingkanäle.</p>
+      <p class="hero-highlight">Mehr Sichtbarkeit. Weniger Aufwand. Keine zusätzlichen Dreharbeiten.</p>
+
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary" data-track="cta_arbeiten_ansehen">Arbeiten ansehen</a>
+        <a href="#kontakt" class="btn btn-secondary" data-track="cta_angebot_anfragen">Angebot anfragen</a>
+      </div>
+
+      <p class="hero-claim">Reisen, die bewegen. Reels, die begeistern.</p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="video-card vertical" data-video-placeholder data-title="Reel-Beispiel 9:16">
+        <div class="video-placeholder">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span>Vertikales Reel · 9:16</span>
+        </div>
+      </div>
+      <div class="video-card horizontal" data-video-placeholder data-title="Kurzvideo-Beispiel 16:9">
+        <div class="video-placeholder">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span>Kurzvideo · 16:9</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reference bar -->
+<section class="reference-bar">
+  <div class="container">
+    <p>Erfahrung in der Videoproduktion für Reiseveranstalter</p>
+    <div class="reference-logos">
+      <span class="ref-logo">Lernidee Erlebnisreisen</span>
+      <span class="ref-logo">TujaReisen</span>
+      <span class="ref-logo">Schnieder Reisen</span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 02 — PORTFOLIO
+========================================================= -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-head">
+      <h2>Unsere Arbeit. Ihre Inspiration.</h2>
+      <p>Reiseziele lassen sich beschreiben. Mit bewegten Bildern werden sie erlebbar. Entdecken Sie ausgewählte Kurzvideos, die wir für Reiseveranstalter erstellt haben.</p>
+    </div>
+
+    <div class="portfolio-tabs">
+      <button class="tab-btn active" data-tab="vertical">Reels – Hochformat 9:16</button>
+      <button class="tab-btn" data-tab="horizontal">Kurzvideos – Querformat 16:9</button>
+    </div>
+
+    <div class="portfolio-grid vertical-grid" id="verticalGrid">
+      <!-- Platzhalter – später durch freigegebene vertikale Reels ersetzen -->
+      <div class="portfolio-item item-vertical" data-video-placeholder data-title="Reel-Beispiel 1">
+        <div class="thumb">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="meta"><div class="title">Platzhalter Reel 1</div><div class="desc">Reisebeispiel folgt</div></div>
+      </div>
+      <div class="portfolio-item item-vertical" data-video-placeholder data-title="Reel-Beispiel 2">
+        <div class="thumb">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="meta"><div class="title">Platzhalter Reel 2</div><div class="desc">Reisebeispiel folgt</div></div>
+      </div>
+      <div class="portfolio-item item-vertical" data-video-placeholder data-title="Reel-Beispiel 3">
+        <div class="thumb">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="meta"><div class="title">Platzhalter Reel 3</div><div class="desc">Reisebeispiel folgt</div></div>
+      </div>
+      <div class="portfolio-item item-vertical" data-video-placeholder data-title="Reel-Beispiel 4">
+        <div class="thumb">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="meta"><div class="title">Platzhalter Reel 4</div><div class="desc">Reisebeispiel folgt</div></div>
+      </div>
+    </div>
+
+    <div class="portfolio-grid horizontal-grid" id="horizontalGrid" hidden>
+      <!-- Platzhalter – später durch freigegebene horizontale Kurzvideos ersetzen -->
+      <div class="portfolio-item item-horizontal" data-video-placeholder data-title="Kurzvideo-Beispiel 1">
+        <div class="thumb">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="meta"><div class="title">Platzhalter Kurzvideo 1</div><div class="desc">Reisebeispiel folgt</div></div>
+      </div>
+      <div class="portfolio-item item-horizontal" data-video-placeholder data-title="Kurzvideo-Beispiel 2">
+        <div class="thumb">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="meta"><div class="title">Platzhalter Kurzvideo 2</div><div class="desc">Reisebeispiel folgt</div></div>
+      </div>
+    </div>
+
+    <div class="portfolio-cta">
+      <p>Sie möchten Ihre Reisen genauso präsentieren?</p>
+      <a href="#kontakt" class="btn btn-primary" data-track="cta_unverbindlich_anfragen">Unverbindlich anfragen</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 03 — WARUM KURZVIDEOS?
+========================================================= -->
+<section class="problem-solution" id="warum">
+  <div class="container">
+    <div>
+      <h2>Reisen muss man sehen, um sie zu erleben.</h2>
+      <p class="lede">Bilder wecken Interesse. Bewegte Bilder lassen Reiseziele lebendig werden.</p>
+      <p>Mit professionellen Kurzvideos präsentieren Sie besondere Reiseerlebnisse in wenigen Sekunden – und ergänzen Ihre bestehende Marketingkommunikation um ein aufmerksamkeitsstarkes Format.</p>
+      <p>Das Beste: Das passende Foto- und Videomaterial haben Sie häufig schon.</p>
+    </div>
+    <div class="solution-box">
+      <h3>Unsere Lösung</h3>
+      <p><strong>Aus vorhandenem Reisematerial wird professioneller Videocontent.</strong></p>
+      <p>Sie liefern die Aufnahmen. Wir kümmern uns um die kreative und technische Umsetzung.</p>
+      <p>Ihr Social Media ist bereits betreut? Perfekt. Wir liefern den passenden Videocontent dazu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 04 — UNSERE LEISTUNGEN
+========================================================= -->
+<section id="leistungen">
+  <div class="container">
+    <div class="section-head">
+      <h2>Ein Service. Zwei Videoformate.</h2>
+      <p>Wir erstellen professionelle Kurzvideos, abgestimmt auf den jeweiligen Einsatzzweck.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="format-tag">Hochformat · 9:16</span>
+        <div class="service-preview ratio-9-16" data-video-placeholder data-title="Reel-Format Beispiel">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <h3>Reels für Social Media</h3>
+        <p>Professionell geschnittene, dynamische Reisevideos für Instagram Reels, Facebook Reels und YouTube Shorts. Ideal, um Reiseziele, besondere Erlebnisse und ausgewählte Reiseangebote kompakt und visuell ansprechend vorzustellen.</p>
+        <div class="tag-list-label">Geeignet für:</div>
+        <ul>
+          <li>Instagram Reels</li>
+          <li>Facebook Reels</li>
+          <li>YouTube Shorts</li>
+          <li>Weitere passende vertikale Videoformate</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <span class="format-tag">Querformat · 16:9</span>
+        <div class="service-preview ratio-16-9" data-video-placeholder data-title="Kurzvideo-Format Beispiel">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <h3>Kurzvideos für Website &amp; Marketing</h3>
+        <p>Kurze, hochwertige Reisevideos für Ihre Website, digitale Präsentationen und weitere Marketingmaßnahmen. Sie vermitteln innerhalb weniger Sekunden einen Eindruck vom Charakter und den Höhepunkten eines Reiseangebots.</p>
+        <div class="tag-list-label">Geeignet für:</div>
+        <ul>
+          <li>Reise- und Produktseiten</li>
+          <li>Unternehmenswebsites</li>
+          <li>Digitale Präsentationen</li>
+          <li>Marketing- und Vertriebsunterlagen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="services-note">
+      <h3>Auch beide Formate möglich</h3>
+      <p>Auf Wunsch erstellen wir für ein Reiseangebot sowohl eine vertikale als auch eine horizontale Videoversion. Schnitt, Bildausschnitte und Texteinblendungen werden dabei an den jeweiligen Einsatzzweck angepasst.</p>
+    </div>
+
+    <div class="services-scope">
+      <h3>Was unsere Videoproduktion umfasst</h3>
+      <p style="margin-bottom:16px;color:var(--text-secondary);">Je nach Projekt:</p>
+      <ul>
+        <li>Auswahl und Schnitt geeigneter Szenen</li>
+        <li>Entwicklung eines passenden Videoablaufs</li>
+        <li>Musik und Texteinblendungen</li>
+        <li>Übergänge und visuelle Gestaltung</li>
+        <li>Formatoptimierung</li>
+        <li>Ergänzung durch geeignetes, lizenziertes Stockmaterial bei Bedarf</li>
+        <li>Lieferung der vereinbarten Videodateien</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 05 — IHRE VORTEILE
+========================================================= -->
+<section class="benefits" id="vorteile">
+  <div class="container">
+    <div class="section-head">
+      <h2>Mehr Videocontent. Weniger Produktionsaufwand.</h2>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+        <h3>Vorhandenes Material besser nutzen</h3>
+        <p>Ihre Fotos und Reiseaufnahmen erhalten einen neuen Einsatzzweck. Wir machen daraus professionelle Kurzvideos, ohne dass zusätzliche Dreharbeiten notwendig sind.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Ihr Marketingteam entlasten</h3>
+        <p>Sie müssen keine eigenen Schnittkapazitäten aufbauen. Wir übernehmen die Videoproduktion und ergänzen Ihre bestehenden Marketingaktivitäten.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z"/></svg></div>
+        <h3>Verschiedene Kanäle bedienen</h3>
+        <p>Je nach Format und Nutzungsrechten können die Videos in unterschiedlichen Marketingkanälen eingesetzt werden. Auf Wunsch entstehen passende Versionen für verschiedene Einsatzzwecke.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+        <h3>Eine eigene Videobibliothek aufbauen</h3>
+        <p>Jedes neue Kurzvideo erweitert Ihren Bestand an professionell aufbereiteten Reiseinhalten. So entsteht Schritt für Schritt eine Videobibliothek für spätere Marketingmaßnahmen.</p>
+      </div>
+    </div>
+
+    <div class="benefit-highlight">
+      <h3>Einmal produziert. Vielseitig einsetzbar.</h3>
+      <p>Ein Reisevideo kann heute für Social Media entstehen und später – gegebenenfalls in angepasster Form – auf einer Reiseseite oder in einer weiteren Kampagne Verwendung finden.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 06 — SO FUNKTIONIERT'S
+========================================================= -->
+<section id="ablauf">
+  <div class="container">
+    <div class="section-head">
+      <h2>In vier Schritten zu Ihrem fertigen Kurzvideo.</h2>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="num">01</div>
+        <h3>Material senden</h3>
+        <p>Sie stellen uns Ihre vorhandenen Fotos, Videos und die wichtigsten Informationen zur Reise zur Verfügung. Wir stimmen gemeinsam das gewünschte Format und den Einsatzzweck ab.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">02</div>
+        <h3>Video erstellen</h3>
+        <p>Wir wählen passende Aufnahmen aus und gestalten daraus ein professionelles Kurzvideo mit durchdachtem Schnitt, Musik und gegebenenfalls Texteinblendungen.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">03</div>
+        <h3>Feedback geben</h3>
+        <p>Sie erhalten eine Vorschau und können Ihre Rückmeldung einbringen. Vereinbarte Anpassungen setzen wir vor der finalen Lieferung um.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">04</div>
+        <h3>Fertiges Video erhalten</h3>
+        <p>Sie erhalten Ihr fertiges Kurzvideo im vereinbarten Format und können es über Ihre bestehenden Marketingkanäle einsetzen.</p>
+      </div>
+    </div>
+
+    <p class="process-footer">Sie konzentrieren sich auf Ihre Reisen. Wir kümmern uns um die Kurzvideos.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 07 — ÜBER REELSPRO
+========================================================= -->
+<section class="about" id="ueber-uns">
+  <div class="container">
+    <h2>Auf Kurzvideos für die Reisebranche spezialisiert.</h2>
+    <p class="lede" style="margin:16px auto;">Reelspro konzentriert sich auf die professionelle Erstellung von Kurzvideos für Reiseveranstalter.</p>
+    <p>Wir kennen die Bedeutung emotionaler Reisebilder und wissen, wie sich vorhandenes Material zu kompakten, ansprechenden Videogeschichten verarbeiten lässt.</p>
+    <p>Unser Ziel ist eine unkomplizierte Zusammenarbeit: klare Abstimmung, professionelle Umsetzung und Videocontent, der sich in bestehende Marketingprozesse integrieren lässt.</p>
+    <p class="about-statement">Keine allgemeine Full-Service-Agentur. Sondern ein spezialisierter Partner für Ihren Videocontent.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 08 — HÄUFIGE FRAGEN
+========================================================= -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <h2>Häufige Fragen</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">Müssen wir neue Videos drehen lassen?<span class="icon"></span></button>
+        <div class="faq-answer"><p>Nein. Wir arbeiten mit Ihren vorhandenen Fotos und Videos. Zusätzliche Dreharbeiten sind nicht erforderlich.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Können wir Reels und horizontale Kurzvideos bestellen?<span class="icon"></span></button>
+        <div class="faq-answer"><p>Ja. Wir produzieren vertikale Reels im Format 9:16 und horizontale Kurzvideos im Format 16:9. Auch beide Versionen für ein Reiseangebot sind möglich.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Betreuen Sie auch unsere Social-Media-Kanäle?<span class="icon"></span></button>
+        <div class="faq-answer"><p>Nein. Wir konzentrieren uns auf die Erstellung der Videos. Die Veröffentlichung erfolgt durch Ihr Unternehmen oder Ihre bestehende Marketingagentur.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Können wir regelmäßig Videos produzieren lassen?<span class="icon"></span></button>
+        <div class="faq-answer"><p>Ja. Neben Einzelaufträgen ist auch eine kontinuierliche Zusammenarbeit möglich.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Wie werden Nutzungsrechte geregelt?<span class="icon"></span></button>
+        <div class="faq-answer"><p>Der vereinbarte Einsatz der fertigen Videos wird im Rahmen des Auftrags festgelegt. Für bereitgestelltes Material und ergänzende Musik- oder Stockinhalte müssen die jeweils erforderlichen Rechte vorliegen.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Was kostet die Erstellung?<span class="icon"></span></button>
+        <div class="faq-answer"><p>Der Preis richtet sich nach Format, Umfang und Anforderungen des Projekts. Gerne erstellen wir Ihnen ein individuelles Angebot.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 09 — KONTAKT
+========================================================= -->
+<section class="contact" id="kontakt">
+  <div class="container">
+    <div class="contact-copy">
+      <h2>Lassen Sie uns Ihre Reisen in Bewegung bringen.</h2>
+      <p>Sie haben bereits eindrucksvolle Fotos und Videos Ihrer Reiseangebote?</p>
+      <p>Wir machen daraus professionelle Kurzvideos, die Ihr Marketing sinnvoll ergänzen.</p>
+      <p>Ob einzelne Reels, horizontale Kurzvideos oder eine regelmäßige Zusammenarbeit – erzählen Sie uns von Ihrem Vorhaben.</p>
+    </div>
+
+    <div class="contact-form-wrap">
+      <div class="form-success" id="formSuccess">Vielen Dank für Ihre Anfrage. Ihre Nachricht wurde erfolgreich übermittelt.</div>
+
+      <!--
+        TODO vor Launch: "action" durch den echten Formspree/Web3Forms-Endpoint ersetzen
+        und die Ziel-E-Mail-Adresse beim jeweiligen Dienst hinterlegen.
+        Platzhalter-Endpoint: https://formspree.io/f/DEINE_FORM_ID
+      -->
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/DEINE_FORM_ID" method="POST" novalidate>
+        <div class="form-group">
+          <label for="name">Ihr Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required>
+          <div class="field-error">Bitte geben Sie Ihren Namen ein.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="company">Unternehmen <span class="required">*</span></label>
+          <input type="text" id="company" name="company" required>
+          <div class="field-error">Bitte geben Sie Ihr Unternehmen an.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Geschäftliche E-Mail-Adresse <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required>
+          <div class="field-error">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">Was interessiert Sie?</label>
+          <select id="interest" name="interest">
+            <option value="">Bitte auswählen</option>
+            <option value="Reels im Hochformat (9:16)">Reels im Hochformat (9:16)</option>
+            <option value="Kurzvideos im Querformat (16:9)">Kurzvideos im Querformat (16:9)</option>
+            <option value="Beide Formate">Beide Formate</option>
+            <option value="Regelmäßige Zusammenarbeit">Regelmäßige Zusammenarbeit</option>
+            <option value="Noch nicht festgelegt">Noch nicht festgelegt</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ihre Nachricht</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <!-- Honeypot-Feld zum Spam-Schutz -->
+        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
+
+        <p class="form-privacy">Ihre Angaben verwenden wir zur Bearbeitung Ihrer Anfrage. Weitere Informationen finden Sie in unserer <a href="#">Datenschutzerklärung</a>.</p>
+
+        <button type="submit" class="btn btn-primary btn-block" data-track="cta_formular_senden">Unverbindliche Anfrage senden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" style="color:#fff;">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#C62835"/>
+            <path d="M11 9L19 14L11 19V9Z" fill="#FFFFFF"/>
+          </svg>
+          Reelspro
+        </a>
+        <p>Professionelle Reels und Kurzvideos für Reiseveranstalter.</p>
+        <p class="claim">Reisen, die bewegen. Reels, die begeistern.</p>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#leistungen">Leistungen</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#vorteile">Vorteile</a>
+          <a href="#ablauf">Ablauf</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <span>[E-Mail-Adresse ergänzen]</span>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutzerklärung</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Reelspro. Alle Rechte vorbehalten.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Video modal placeholder (ersetzt durch echtes Video-Embed bei Freigabe) -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-inner">
+    <button class="video-modal-close" id="videoModalClose" aria-label="Schließen">&times;</button>
+    <div class="placeholder-note">
+      <h3 id="videoModalTitle">Videoplatzhalter</h3>
+      <p>Hier wird nach Freigabe das echte Reisevideo eingebunden (per Klick abgespielt, ohne automatischen Ton).</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
