@@ -155,13 +155,13 @@ h3 { font-size: 20px; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  font-size: 19px;
-  color: var(--white);
 }
 
-.logo svg { flex-shrink: 0; }
+.logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
 
 .main-nav {
   display: flex;
