@@ -3,14 +3,14 @@
    ========================================================= */
 
 :root {
-  --navy: #16233f;
-  --navy-light: #24395f;
-  --red: #b5303c;
-  --red-dark: #8f2530;
-  --white: #ffffff;
-  --bg-light: #f6f7fa;
-  --text: #333a47;
-  --text-secondary: #6b7280;
+  --navy: #26416b;
+  --navy-light: #335282;
+  --red: #c7212e;
+  --red-dark: #a11924;
+  --white: #fafbfc;
+  --bg-light: #f3f5f8;
+  --text: #3d4452;
+  --text-secondary: #76808f;
 
   --font: "Inter", "Manrope", system-ui, -apple-system, sans-serif;
 
@@ -155,10 +155,13 @@ h3 { font-size: 20px; }
 .logo {
   display: flex;
   align-items: center;
+  background: var(--white);
+  padding: 8px 14px;
+  border-radius: 999px;
 }
 
 .logo-img {
-  height: 32px;
+  height: 26px;
   width: auto;
   display: block;
 }
@@ -236,7 +239,11 @@ h3 { font-size: 20px; }
    ========================================================= */
 
 .hero {
-  background: linear-gradient(160deg, var(--navy) 0%, #0d1626 100%);
+  background:
+    linear-gradient(100deg, rgba(38, 65, 107, 0.94) 0%, rgba(22, 35, 63, 0.75) 55%, rgba(22, 35, 63, 0.55) 100%),
+    url("assets/hero-background.jpg");
+  background-size: cover;
+  background-position: center 65%;
   color: var(--white);
   padding: 170px 0 96px;
   overflow: hidden;
@@ -295,7 +302,7 @@ h3 { font-size: 20px; }
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
-  background: #0b1320;
+  background: #13203a;
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
 }
@@ -329,7 +336,7 @@ h3 { font-size: 20px; }
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: linear-gradient(160deg, #213350, #0f1a2c);
+  background: linear-gradient(160deg, #2c4268, #182944);
   color: rgba(255, 255, 255, 0.55);
   text-align: center;
   padding: 16px;
@@ -469,7 +476,7 @@ h3 { font-size: 20px; }
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: linear-gradient(145deg, #213350, #0d1626);
+  background: linear-gradient(145deg, #2c4268, #16233f);
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   padding: 16px;
@@ -582,7 +589,7 @@ h3 { font-size: 20px; }
   border-radius: var(--radius-sm);
   overflow: hidden;
   margin-bottom: 20px;
-  background: linear-gradient(145deg, #213350, #0d1626);
+  background: linear-gradient(145deg, #2c4268, #16233f);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -839,7 +846,7 @@ h3 { font-size: 20px; }
    ========================================================= */
 
 .contact {
-  background: linear-gradient(160deg, var(--navy) 0%, #0d1626 100%);
+  background: linear-gradient(160deg, var(--navy) 0%, #16233f 100%);
   color: var(--white);
 }
 
@@ -939,7 +946,7 @@ h3 { font-size: 20px; }
    ========================================================= */
 
 .site-footer {
-  background: #0d1626;
+  background: #16233f;
   color: rgba(255, 255, 255, 0.7);
   padding: 56px 0 32px;
 }
