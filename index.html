@@ -5,13 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reelspro | Reels und Kurzvideos für Reiseveranstalter</title>
 <meta name="description" content="Professionelle Reels und Kurzvideos für Reiseveranstalter. Wir verwandeln vorhandene Fotos und Videos in Videocontent für Social Media und Websites.">
+<meta name="theme-color" content="#16233f">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Reelspro">
+<meta property="og:title" content="Reelspro | Reels und Kurzvideos für Reiseveranstalter">
+<meta property="og:description" content="Professionelle Reels und Kurzvideos für Reiseveranstalter. Wir verwandeln vorhandene Fotos und Videos in Videocontent für Social Media und Websites.">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:locale" content="de_DE">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reelspro | Reels und Kurzvideos für Reiseveranstalter">
+<meta name="twitter:description" content="Professionelle Reels und Kurzvideos für Reiseveranstalter.">
+<meta name="twitter:image" content="assets/logo.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/png" href="assets/favicon.png">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Reelspro",
+  "description": "Professionelle Reels und Kurzvideos für Reiseveranstalter.",
+  "slogan": "Reisen, die bewegen. Reels, die begeistern.",
+  "areaServed": "DE",
+  "serviceType": ["Videoproduktion", "Social-Media-Reels", "Kurzvideo-Produktion"]
+}
+</script>
 </head>
 <body>
+
+<a href="#hero" class="skip-link">Zum Inhalt springen</a>
 
 <!-- =========================================================
      HEADER / NAVIGATION
@@ -32,21 +63,23 @@
 
     <div class="header-cta">
       <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 
-  <div class="mobile-nav" id="mobileNav">
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
     <a href="#portfolio">Portfolio</a>
     <a href="#leistungen">Leistungen</a>
     <a href="#vorteile">Vorteile</a>
     <a href="#ablauf">Ablauf</a>
     <a href="#kontakt">Kontakt</a>
     <a href="#kontakt" class="btn btn-primary">Angebot anfragen</a>
-  </div>
+  </nav>
 </header>
+
+<main>
 
 <!-- =========================================================
      SECTION 01 — HERO
@@ -101,7 +134,7 @@
 ========================================================= -->
 <section class="portfolio" id="portfolio">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <h2>Unsere Arbeit. Ihre Inspiration.</h2>
       <p>Ausgewählte Kurzvideos, die wir für Reiseveranstalter erstellt haben.</p>
     </div>
@@ -111,7 +144,7 @@
       <button class="tab-btn" data-tab="horizontal">Kurzvideos – Querformat 16:9</button>
     </div>
 
-    <div class="portfolio-grid vertical-grid" id="verticalGrid">
+    <div class="portfolio-grid vertical-grid reveal-stagger" id="verticalGrid">
       <!-- Platzhalter – später durch freigegebene vertikale Reels ersetzen -->
       <div class="portfolio-item item-vertical" data-video-placeholder data-title="Reel-Beispiel 1">
         <div class="thumb">
@@ -172,7 +205,7 @@
       <p class="lede">Bilder wecken Interesse. Bewegte Bilder lassen Reiseziele lebendig werden.</p>
       <p>Das passende Foto- und Videomaterial haben Sie häufig schon.</p>
     </div>
-    <div class="solution-box">
+    <div class="solution-box reveal">
       <h3>Unsere Lösung</h3>
       <p><strong>Aus vorhandenem Reisematerial wird professioneller Videocontent.</strong></p>
       <p>Sie liefern die Aufnahmen. Wir übernehmen die kreative und technische Umsetzung – als Ergänzung zu Ihrem bestehenden Social-Media-Marketing.</p>
@@ -185,12 +218,12 @@
 ========================================================= -->
 <section id="leistungen">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <h2>Ein Service. Zwei Videoformate.</h2>
       <p>Wir erstellen professionelle Kurzvideos, abgestimmt auf den jeweiligen Einsatzzweck.</p>
     </div>
 
-    <div class="services-grid">
+    <div class="services-grid reveal-stagger">
       <div class="service-card">
         <span class="format-tag">Hochformat · 9:16</span>
         <div class="service-preview ratio-9-16" data-video-placeholder data-title="Reel-Format Beispiel">
@@ -243,11 +276,11 @@
 ========================================================= -->
 <section class="benefits" id="vorteile">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <h2>Mehr Videocontent. Weniger Produktionsaufwand.</h2>
     </div>
 
-    <div class="benefits-grid">
+    <div class="benefits-grid reveal-stagger">
       <div class="benefit-card">
         <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
         <h3>Vorhandenes Material besser nutzen</h3>
@@ -282,11 +315,11 @@
 ========================================================= -->
 <section id="ablauf">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <h2>In vier Schritten zu Ihrem fertigen Kurzvideo.</h2>
     </div>
 
-    <div class="process-grid">
+    <div class="process-grid reveal-stagger">
       <div class="process-step">
         <div class="num">01</div>
         <h3>Material senden</h3>
@@ -329,34 +362,34 @@
 ========================================================= -->
 <section id="faq">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <h2>Häufige Fragen</h2>
     </div>
 
-    <div class="faq-list">
+    <div class="faq-list reveal-stagger">
       <div class="faq-item">
-        <button class="faq-question">Müssen wir neue Videos drehen lassen?<span class="icon"></span></button>
-        <div class="faq-answer"><p>Nein. Wir arbeiten mit Ihren vorhandenen Fotos und Videos. Zusätzliche Dreharbeiten sind nicht erforderlich.</p></div>
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">Müssen wir neue Videos drehen lassen?<span class="icon"></span></button>
+        <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1"><p>Nein. Wir arbeiten mit Ihren vorhandenen Fotos und Videos. Zusätzliche Dreharbeiten sind nicht erforderlich.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Können wir Reels und horizontale Kurzvideos bestellen?<span class="icon"></span></button>
-        <div class="faq-answer"><p>Ja. Wir produzieren vertikale Reels im Format 9:16 und horizontale Kurzvideos im Format 16:9. Auch beide Versionen für ein Reiseangebot sind möglich.</p></div>
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">Können wir Reels und horizontale Kurzvideos bestellen?<span class="icon"></span></button>
+        <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2"><p>Ja. Wir produzieren vertikale Reels im Format 9:16 und horizontale Kurzvideos im Format 16:9. Auch beide Versionen für ein Reiseangebot sind möglich.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Betreuen Sie auch unsere Social-Media-Kanäle?<span class="icon"></span></button>
-        <div class="faq-answer"><p>Nein. Wir konzentrieren uns auf die Erstellung der Videos. Die Veröffentlichung erfolgt durch Ihr Unternehmen oder Ihre bestehende Marketingagentur.</p></div>
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">Betreuen Sie auch unsere Social-Media-Kanäle?<span class="icon"></span></button>
+        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3"><p>Nein. Wir konzentrieren uns auf die Erstellung der Videos. Die Veröffentlichung erfolgt durch Ihr Unternehmen oder Ihre bestehende Marketingagentur.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Können wir regelmäßig Videos produzieren lassen?<span class="icon"></span></button>
-        <div class="faq-answer"><p>Ja. Neben Einzelaufträgen ist auch eine kontinuierliche Zusammenarbeit möglich.</p></div>
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">Können wir regelmäßig Videos produzieren lassen?<span class="icon"></span></button>
+        <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4"><p>Ja. Neben Einzelaufträgen ist auch eine kontinuierliche Zusammenarbeit möglich.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Wie werden Nutzungsrechte geregelt?<span class="icon"></span></button>
-        <div class="faq-answer"><p>Der vereinbarte Einsatz der fertigen Videos wird im Rahmen des Auftrags festgelegt. Für bereitgestelltes Material und ergänzende Musik- oder Stockinhalte müssen die jeweils erforderlichen Rechte vorliegen.</p></div>
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">Wie werden Nutzungsrechte geregelt?<span class="icon"></span></button>
+        <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5"><p>Der vereinbarte Einsatz der fertigen Videos wird im Rahmen des Auftrags festgelegt. Für bereitgestelltes Material und ergänzende Musik- oder Stockinhalte müssen die jeweils erforderlichen Rechte vorliegen.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Was kostet die Erstellung?<span class="icon"></span></button>
-        <div class="faq-answer"><p>Der Preis richtet sich nach Format, Umfang und Anforderungen des Projekts. Gerne erstellen wir Ihnen ein individuelles Angebot.</p></div>
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">Was kostet die Erstellung?<span class="icon"></span></button>
+        <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6"><p>Der Preis richtet sich nach Format, Umfang und Anforderungen des Projekts. Gerne erstellen wir Ihnen ein individuelles Angebot.</p></div>
       </div>
     </div>
   </div>
@@ -427,6 +460,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- =========================================================
      FOOTER
