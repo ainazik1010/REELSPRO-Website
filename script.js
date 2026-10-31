@@ -42,43 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- Video placeholders: play on click (no autoplay, no sound) ---------- */
-  const videoModal = document.getElementById('videoModal');
-  const videoModalTitle = document.getElementById('videoModalTitle');
-  const videoModalClose = document.getElementById('videoModalClose');
-
-  function openVideoModal(el) {
-    videoModalTitle.textContent = el.dataset.title || 'Videoplatzhalter';
-    videoModal.classList.add('open');
-    trackEvent('portfolio_video_click', { title: el.dataset.title });
-  }
-
-  document.querySelectorAll('[data-video-placeholder]').forEach(el => {
-    el.setAttribute('role', 'button');
-    el.setAttribute('tabindex', '0');
-    el.setAttribute('aria-label', 'Video abspielen: ' + (el.dataset.title || 'Videoplatzhalter'));
-
-    el.addEventListener('click', () => openVideoModal(el));
-    el.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        openVideoModal(el);
-      }
-    });
-  });
-
-  function closeModal() {
-    videoModal.classList.remove('open');
-  }
-
-  videoModalClose.addEventListener('click', closeModal);
-  videoModal.addEventListener('click', (e) => {
-    if (e.target === videoModal) closeModal();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
-  });
-
   /* ---------- FAQ accordion ---------- */
   document.querySelectorAll('.faq-item').forEach(item => {
     const question = item.querySelector('.faq-question');
