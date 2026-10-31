@@ -452,58 +452,16 @@
       </div>
     </div>
 
-    <div class="contact-form-wrap">
-      <div class="form-success" id="formSuccess">Vielen Dank für Ihre Anfrage. Ihre Nachricht wurde erfolgreich übermittelt.</div>
-
-      <!--
-        TODO vor Launch: FORM_ENDPOINT in script.js auf die Google-Apps-Script-
-        Web-App-URL setzen (siehe google-apps-script/README.md), damit Anfragen
-        in ein Google Sheet + per E-Mail ankommen. Solange das leer bleibt,
-        öffnet das Formular nur das E-Mail-Programm als Fallback.
-      -->
-      <form class="contact-form" id="contactForm" novalidate>
-        <div class="form-group">
-          <label for="name">Ihr Name <span class="required">*</span></label>
-          <input type="text" id="name" name="name" required>
-          <div class="field-error">Bitte geben Sie Ihren Namen ein.</div>
-        </div>
-
-        <div class="form-group">
-          <label for="company">Unternehmen <span class="required">*</span></label>
-          <input type="text" id="company" name="company" required>
-          <div class="field-error">Bitte geben Sie Ihr Unternehmen an.</div>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Geschäftliche E-Mail-Adresse <span class="required">*</span></label>
-          <input type="email" id="email" name="email" required>
-          <div class="field-error">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
-        </div>
-
-        <div class="form-group">
-          <label for="interest">Was interessiert Sie?</label>
-          <select id="interest" name="interest">
-            <option value="">Bitte auswählen</option>
-            <option value="Reels im Hochformat (9:16)">Reels im Hochformat (9:16)</option>
-            <option value="Kurzvideos im Querformat (16:9)">Kurzvideos im Querformat (16:9)</option>
-            <option value="Beide Formate">Beide Formate</option>
-            <option value="Regelmäßige Zusammenarbeit">Regelmäßige Zusammenarbeit</option>
-            <option value="Noch nicht festgelegt">Noch nicht festgelegt</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Ihre Nachricht</label>
-          <textarea id="message" name="message" rows="4"></textarea>
-        </div>
-
-        <!-- Honeypot-Feld zum Spam-Schutz -->
-        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
-
-        <p class="form-privacy">Ihre Angaben verwenden wir zur Bearbeitung Ihrer Anfrage. Weitere Informationen finden Sie in unserer <a href="#">Datenschutzerklärung</a>.</p>
-
-        <button type="submit" class="btn btn-primary btn-block" data-track="cta_formular_senden">Unverbindliche Anfrage senden</button>
-      </form>
+    <div class="contact-form-wrap contact-details">
+      <h3>Direkt erreichbar</h3>
+      <div class="contact-detail">
+        <span class="contact-detail-label">E-Mail</span>
+        <a href="mailto:team@reelspro.de">team@reelspro.de</a>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-detail-label">Telefon</span>
+        <span class="contact-detail-pending">folgt in Kürze</span>
+      </div>
     </div>
   </div>
 </section>

@@ -1084,74 +1084,41 @@ h3 { font-size: 20px; }
   color: var(--text);
 }
 
-.form-group { margin-bottom: 20px; }
-
-.form-group label {
-  display: block;
-  font-weight: 600;
-  font-size: 14px;
+.contact-details h3 {
   color: var(--navy);
-  margin-bottom: 8px;
-}
-
-.form-group .required { color: var(--red); }
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 13px 14px;
-  border: 1.5px solid #e2e8f0;
-  border-radius: var(--radius-sm);
-  font-family: var(--font);
-  font-size: 15px;
-  color: var(--text);
-  background: var(--white);
-  transition: border-color var(--transition);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--red);
-}
-
-.form-group input.invalid,
-.form-group select.invalid {
-  border-color: var(--red);
-}
-
-.field-error {
-  display: none;
-  color: var(--red);
-  font-size: 13px;
-  margin-top: 6px;
-}
-.field-error.show { display: block; }
-
-.form-privacy {
-  font-size: 13px;
-  color: var(--text-secondary);
-  margin: 16px 0 20px;
-}
-.form-privacy a { color: var(--navy); text-decoration: underline; }
-
-.form-success {
-  display: none;
-  background: #e9f7ef;
-  border: 1px solid #bfe8cf;
-  color: #1a7d3f;
-  padding: 16px 18px;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
+  font-size: 19px;
   margin-bottom: 20px;
 }
-.form-success.show { display: block; }
 
-.contact-form.hidden { display: none; }
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+.contact-detail:last-child { border-bottom: none; padding-bottom: 0; }
 
-.honeypot { position: absolute; left: -9999px; opacity: 0; height: 0; }
+.contact-detail-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.contact-detail a {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--navy);
+}
+.contact-detail a:hover { color: var(--red); }
+
+.contact-detail-pending {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
 
 /* =========================================================
    Footer
