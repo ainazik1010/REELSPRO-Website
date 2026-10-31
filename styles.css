@@ -902,6 +902,50 @@ h3 { font-size: 20px; }
   margin-top: 24px;
 }
 
+/* =========================================================
+   Rechtliche Seiten (Impressum, Datenschutz)
+   ========================================================= */
+
+.legal {
+  padding: 160px 0 100px;
+}
+
+.legal .container {
+  max-width: 720px;
+}
+
+.legal h1 {
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.legal-lede {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.legal h2 {
+  color: var(--navy);
+  font-size: 19px;
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.legal p {
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.legal a { color: var(--red); }
+
+.legal-back {
+  display: inline-block;
+  margin-top: 40px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
 .about-person {
   display: flex;
   align-items: center;
