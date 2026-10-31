@@ -931,9 +931,22 @@ h3 { font-size: 20px; }
   margin-bottom: 10px;
 }
 
+.legal h3 {
+  color: var(--navy);
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
 .legal p {
   color: var(--text);
   margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.legal ul {
+  margin: 0 0 12px 20px;
+  color: var(--text);
   line-height: 1.7;
 }
 
