@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* Nach der Einrichtung des Google-Skripts (siehe google-apps-script/)
      hier die "/exec"-URL der Bereitstellung eintragen. Solange das leer
      bleibt, öffnet das Formular stattdessen nur das E-Mail-Programm. */
-  const FORM_ENDPOINT = '';
+  const FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzN5d2QKlIoKma3rrSzjNs9xbgbOZgoKq_Xyk4CG90r9Z0b4qTwlPcPhDsTiOu8j2M/exec';
 
   const form = document.getElementById('contactForm');
   const formSuccess = document.getElementById('formSuccess');
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = href;
   }
 
-  const NOTIFY_EMAIL_PLACEHOLDER = '[E-Mail-Adresse ergänzen]';
+  const NOTIFY_EMAIL_PLACEHOLDER = 'team@reelspro.de';
 
   function showSuccess() {
     form.classList.add('hidden');

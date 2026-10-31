@@ -11,19 +11,29 @@
  * Danach hier nichts mehr ändern nötig — einfach laufen lassen.
  */
 
-var NOTIFY_EMAIL = 'DEINE-EMAIL@BEISPIEL.de'; // TODO: durch die echte Empfänger-Adresse ersetzen
+var NOTIFY_EMAIL = 'team@reelspro.de';
+
+// Nur nötig, wenn dieses Skript NICHT direkt in der Tabelle (Erweiterungen ->
+// Apps Script) erstellt wurde, sondern eigenständig über script.google.com /
+// script.new: dann hier die Tabellen-ID eintragen (aus der Sheet-URL, der
+// Teil zwischen /d/ und /edit). Wurde das Skript direkt in der Tabelle
+// erstellt, kann SPREADSHEET_ID leer ('') bleiben.
+var SPREADSHEET_ID = '1sPikvR1H7wUXw9EV82jau5xHV2OlPxdBPLdKOlH1q9g';
 
 var HEADER_ROW = [
   'Zeitstempel', 'Name', 'Unternehmen', 'E-Mail', 'Interesse', 'Nachricht'
 ];
 
+function getSheet_() {
+  var ss = SPREADSHEET_ID
+    ? SpreadsheetApp.openById(SPREADSHEET_ID)
+    : SpreadsheetApp.getActiveSpreadsheet();
+  return ss.getSheets()[0];
+}
+
 function doPost(e) {
-  // Wichtig: Dieses Skript muss über "Erweiterungen -> Apps Script" DIREKT
-  // IN der Google-Tabelle erstellt worden sein (nicht als eigenes Projekt
-  // auf script.google.com) — nur dann weiß getActiveSpreadsheet(), welche
-  // Tabelle gemeint ist.
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheets()[0];
+  var sheet = getSheet_();
+  var ss = sheet.getParent();
 
   if (sheet.getLastRow() === 0) {
     sheet.appendRow(HEADER_ROW);
