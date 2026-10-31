@@ -410,7 +410,6 @@
     <div class="contact-copy">
       <h2>Lassen Sie uns Ihre Reisen in Bewegung bringen.</h2>
       <p>Sie haben bereits Fotos und Videos Ihrer Reiseangebote? Wir machen daraus professionelle Kurzvideos, die Ihr Marketing sinnvoll ergänzen.</p>
-      <p><strong>Risikofrei starten:</strong> 3 Monate unverbindlich testen, mit klaren Kennzahlen zu Reichweite, Profilaufrufen und Anfragen. Kein Agentur-Overhead – ein fester Ansprechpartner, monatlich kündbar.</p>
       <p>Erzählen Sie uns von Ihrem Vorhaben.</p>
 
       <div class="about-person reveal">
@@ -430,11 +429,12 @@
       <div class="form-success" id="formSuccess">Vielen Dank für Ihre Anfrage. Ihre Nachricht wurde erfolgreich übermittelt.</div>
 
       <!--
-        TODO vor Launch: "action" durch den echten Formspree/Web3Forms-Endpoint ersetzen
-        und die Ziel-E-Mail-Adresse beim jeweiligen Dienst hinterlegen.
-        Platzhalter-Endpoint: https://formspree.io/f/DEINE_FORM_ID
+        TODO vor Launch: FORM_ENDPOINT in script.js auf die Google-Apps-Script-
+        Web-App-URL setzen (siehe google-apps-script/README.md), damit Anfragen
+        in ein Google Sheet + per E-Mail ankommen. Solange das leer bleibt,
+        öffnet das Formular nur das E-Mail-Programm als Fallback.
       -->
-      <form class="contact-form" id="contactForm" action="https://formspree.io/f/DEINE_FORM_ID" method="POST" novalidate>
+      <form class="contact-form" id="contactForm" novalidate>
         <div class="form-group">
           <label for="name">Ihr Name <span class="required">*</span></label>
           <input type="text" id="name" name="name" required>

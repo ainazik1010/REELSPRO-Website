@@ -101,7 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- Contact form validation ---------- */
+  /* ---------- Contact form validation & submission ---------- */
+
+  /* Nach der Einrichtung des Google-Skripts (siehe google-apps-script/)
+     hier die "/exec"-URL der Bereitstellung eintragen. Solange das leer
+     bleibt, öffnet das Formular stattdessen nur das E-Mail-Programm. */
+  const FORM_ENDPOINT = '';
+
   const form = document.getElementById('contactForm');
   const formSuccess = document.getElementById('formSuccess');
 
@@ -155,38 +161,55 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const isPlaceholderEndpoint = form.action.includes('DEINE_FORM_ID');
-
-    if (isPlaceholderEndpoint) {
-      // Kein echter Versand-Endpoint konfiguriert (Demo-/Platzhalter-Modus).
-      console.warn('Reelspro: Formular-Endpoint ist noch ein Platzhalter. Bitte vor Launch durch echten Formspree/Web3Forms-Endpoint ersetzen.');
-      showSuccess();
-      trackEvent('form_submit_demo');
+    if (!FORM_ENDPOINT) {
+      openMailFallback();
       return;
     }
 
-    submitForm();
-  });
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
 
-  function submitForm() {
     const formData = new FormData(form);
-    fetch(form.action, {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    })
-      .then(response => {
-        if (response.ok) {
-          showSuccess();
-          trackEvent('form_submit_success');
-        } else {
-          alert('Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
-        }
+    fetch(FORM_ENDPOINT, { method: 'POST', body: new URLSearchParams(formData) })
+      .then(response => (response.ok ? response.json() : Promise.reject(new Error('bad status'))))
+      .then(json => {
+        if (!json || json.ok !== true) throw new Error('bad payload');
+        showSuccess();
+        trackEvent('form_submit_success');
       })
       .catch(() => {
-        alert('Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
+        openMailFallback();
+      })
+      .finally(() => {
+        if (submitBtn) submitBtn.disabled = false;
       });
+  });
+
+  function openMailFallback() {
+    const name = form.elements['name'].value;
+    const company = form.elements['company'].value;
+    const email = form.elements['email'].value;
+    const interest = form.elements['interest'].value;
+    const message = form.elements['message'].value;
+
+    const body = [
+      'Anfrage über die Reelspro-Website', '',
+      'Name:        ' + name,
+      'Unternehmen: ' + company,
+      'E-Mail:      ' + email,
+      'Interesse:   ' + (interest || '—'), '',
+      'Nachricht:',
+      (message || '—')
+    ].join('\n');
+
+    const href = 'mailto:' + NOTIFY_EMAIL_PLACEHOLDER
+      + '?subject=' + encodeURIComponent('Anfrage: ' + (company || name))
+      + '&body=' + encodeURIComponent(body);
+
+    window.location.href = href;
   }
+
+  const NOTIFY_EMAIL_PLACEHOLDER = '[E-Mail-Adresse ergänzen]';
 
   function showSuccess() {
     form.classList.add('hidden');
